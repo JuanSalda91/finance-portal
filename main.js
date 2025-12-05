@@ -1,3 +1,6 @@
+//############### USER LOGIN FORM VALIDATION ###############//
+
+// Wait for the DOM to fully load
 document.addEventListener("DOMContentLoaded", function () {
     // 1. Select Elements
     const loginForm = document.getElementById("loginForm");
