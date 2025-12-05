@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Login</title>
 
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Fonts -->
+    
   </head>
   <body class="login-page">
     <main class="login-container">
       <section class="login-card">
-        <div class="login-header-text"></div>
-
+        <div class="login-header-text">
+           <!-- You can add a title here like <h2>Welcome Back</h2> -->
+        </div>
 
         <form id="loginForm" action="#" method="POST" novalidate>
           <!-- Username Field -->
@@ -28,7 +28,7 @@
               required
               autocomplete="username"
             />
-            <!-- Error message hidden by default -->
+            <!-- Error message area -->
             <span class="error-message" id="usernameError"></span>
           </div>
 
@@ -45,12 +45,14 @@
               minlength="8"
             />
             <span class="error-message" id="passwordError"></span>
+
             <!-- Submit button -->
             <div class="submit-button">
               <button type="submit" class="btn btn-primary btn-block">
                 Log In
               </button>
             </div>
+
             <div class="password-actions">
               <a href="#" class="forgot-pass">Forgot your password?</a>
             </div>
